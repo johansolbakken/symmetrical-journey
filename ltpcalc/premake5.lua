@@ -10,6 +10,7 @@ workspace "LTP-calc"
 project "core"
     kind "SharedLib"
     language "C++"
+    cppdialect "C++17"
     location "core"
     targetdir ("bin/" .. outputdir)
     objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
@@ -27,6 +28,7 @@ project "core"
 project "persistence"
     kind "SharedLib"
     language "C++"
+    cppdialect "C++17"
     location "persistence"
     targetdir ("bin/" .. outputdir)
     objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
@@ -45,6 +47,7 @@ project "persistence"
 project "ui"
     kind "ConsoleApp"
     language "C++"
+    cppdialect "C++17"
     location "ui"
     targetdir ("bin/" .. outputdir)
     objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
